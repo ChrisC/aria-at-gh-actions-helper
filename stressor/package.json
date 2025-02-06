@@ -5,6 +5,7 @@
   "main": "stress-test.mts",
   "scripts": {
     "cancel-runs": "tsx cancel-all-workflows.mts",
+    "stress-test": "tsx stress-test.mts",
     "test-types": "tsc --noEmit"
   },
   "author": "",

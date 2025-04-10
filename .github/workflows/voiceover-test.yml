@@ -39,8 +39,10 @@ on:
         options:
           - "13"
           - "14"
+          - "15"
           - "15-large"
-        default: "15-large"
+          - "15-xlarge"
+        default: "15"
       browser:
         description: |
           The browser to use for testing, "chrome" or "firefox" or "safari", default "safari"
@@ -130,8 +132,8 @@ jobs:
       - name: Start VoiceOver
         run: "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter"
       
-      - name: Configure VO Utility to Allow VO to be controlled with Applescript
-        run: ./config-vo-applescript.sh
+      # - name: Configure VO Utility to Allow VO to be controlled with Applescript
+      #   run: ./config-vo-applescript.sh
 
         # This feature must be enabled in order for the harness to inspect the
         # the page (AppleScript is used for this purpose instead of

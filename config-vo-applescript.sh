@@ -9,4 +9,4 @@ if csrutil status | grep -Eq  "System Integrity Protection status: (disabled|unk
     # New requirement for MacOS Sequoia replacing the `defaults write` below. Due to the plist being located in sandboxed location SIP or similar security controls need to be relaxed before unentitled apps/scripts can modify the value.
     sudo plutil -replace SCREnableAppleScript -bool true ~/Library/Group\ Containers/group.com.apple.VoiceOver/Library/Preferences/com.apple.VoiceOver4/default.plist
 fi
-defaults write com.apple.VoiceOver4/default SCREnableAppleScript -bool YES
+# defaults write com.apple.VoiceOver4/default SCREnableAppleScript -bool YES
